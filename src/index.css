@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,41 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 33%),
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 33%),
+    url('pic/bg-sand.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.bg-blackT {
+  background: rgba(12, 12, 12, 0.8);
+}
+
+.popupbackground{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.svb-prime {
+  color: rgb(32, 62, 81);
+}
+
+.svb-prime-bg {
+  background-color: rgb(32, 62, 81);
+}
+
+.svb-sec {
+  color: rgb(191, 23, 51);
+}
+
+.svb-sec-bg {
+  background-color: rgb(191, 23, 51);
 }
